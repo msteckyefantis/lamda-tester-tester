@@ -2,11 +2,20 @@
 
 function lambdaFunction( event, context, callback ) {
 
-    console.log( 'The event:', event );
+    if( process.env.LOG ) {
 
-    console.log( 'The context:', context );
+        console.log( 'The event:', event );
 
-    console.log( 'Environment variables:', process.env );
+        // lambda tester simulates the context
+        console.log( 'The context:', context );
+
+        /*
+            to use envrionment variables in your test:
+            put a .env file at the root folder of this project
+        */
+        console.log( 'Environment variables:', process.env );
+    }
+
 
     callback( null, 'function completed successfully' );
 }
