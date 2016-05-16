@@ -1,6 +1,6 @@
 # Testing vandium's AWS Lambda Tester
 
-[vandium](https://github.com/vandium-io/vandium-node/)'s [lambda-tester](https://github.com/vandium-io/lambda-tester/)
+[vandium](http://vandium.io)'s [lambda-tester](https://github.com/vandium-io/lambda-tester/)
 
 To run, use mocha test/index.test.js
 
